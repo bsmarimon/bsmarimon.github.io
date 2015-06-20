@@ -8,8 +8,10 @@
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      
+        
+        <link href="css/loadingbar.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+
         <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -21,23 +23,39 @@
 
         Check out his instagram too, he's actually quite handsome. 
         ========================================================== -->
-        <section id="background">
-            <canvas id="canvas"></canvas>
-              <div class="wrapper">
-                <div class="casper-holder">
-                    <div class="casper"></div>
-                    <div class="hero-circle"><br><br>
-                        <p class="name">Benjamin Marimon</p>
-                        <p>Software + Web <br> Developer <br> ____________________ <br> <br> Sherlock + Boba <br>Enthusiast</p>
-                        <!-- Don't act like you've never done it as a quick fix! -->
-                        <br><br><br><br><br><br><br>
-                        <i class="large mdi-hardware-keyboard-arrow-down arrow-spacing"></i>
-                        <i class="large mdi-hardware-keyboard-arrow-down"></i>
+        <div class="intro">
+            <a class="waves-effect waves-light btn modal-trigger tldr" href="#modal1">TL;DR</a>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+              
+                    <div class="row rowFix">
+                    <h3 class="tldrHeader">TL;DR</h3>
+                    <p class="tldrMain">I am an Electrical Engineering and Computer Science at UC Berkeley ('17) with an interest in Web Development and Computer Security. This summer, I am working at Rambus headquarters in Sunnyvale, CA.</p>
+                        <div class="col s12 m4">
+                            <p class="tldrText"><a target="_blank" href="BenjaminMarimonResume.pdf">Resume</a></p>
+                        </div>
+                        <div class="col s12 m4">
+                            <p class="tldrText"><a target="_blank" href="https://github.com/bsmarimon">Github</a></p>
+                        </div>
+                        <div class="col s12 m4">
+                            <p class="tldrText"><a href="mailto:bsmarimon@berkeley.edu" target="_top">Email</a></p>
+                        </div>
                     </div>
                 </div>
-
+                <div class="modal-footer">
+                    <p class="tldrText"><a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a></p>
+                </div>
             </div>
-        </section>
+
+           
+                <div class="row rowFix">
+                    <h2 class="name">Benjamin Marimon</h2>
+                    <div class="col s12">
+                        <p class="introText">Software + Web Developer &nbsp &nbsp // &nbsp &nbsp Sherlock + Boba Enthusiast</p>
+                    </div>
+                </div>
+            
+        </div>
         <div class="about">
             <div class="row rowFix">
                 <div class="col s4 offset-s6">
@@ -49,11 +67,10 @@
                         You can grab a copy of my <b>resume</b> from <a target="_blank" href="BenjaminMarimonResume.pdf">here</a> or look at an expanded version further down (coming soon).
                         <br>
                         <br> 
-                        This site was built using Google's Materialize CSS framework, Javascript, and JQuery. You can check out the <a target="_blank" href="https://github.com/bsmarimon/bsmarimon.github.io">repo</a> too.
+                        This site was built using Materialize, Javascript, and JQuery. You can check out the <a target="_blank" href="https://github.com/bsmarimon/bsmarimon.github.io">repo</a> too.
                     </p>
                 </div>
-                <div class="col s2"></div>
-              </div>
+            </div>
         <div>
 
         <div class="divider"></div>
@@ -123,14 +140,16 @@
                         <a target="_blank" href="https://github.com/bsmarimon">Github</a> &bull; 
                         <a href="mailto:bsmarimon@berkeley.edu" target="_top">Email</a> &bull;
                         <a target="_blank" href="https://www.linkedin.com/pub/benjamin-marimon/a4/b6a/b64">Linkedin</a>  
-                        <br>Credit to <a target="_blank" href="http://www.drydenwilliams.co.uk/">Dryden Williams</a> for Ball Animations</p>
                 </div>
             </div>
         
         </footer>
 
+        <script src="js/modernizr.js"></script>
         <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
         <script src="js/script.js"></script>
         <script src="js/dots.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

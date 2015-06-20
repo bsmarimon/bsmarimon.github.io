@@ -9,6 +9,7 @@ body {
     height:100%;
     width: 100%;
     text-align: center;
+    font-weight: normal;
 }
 
 h2 {
@@ -23,17 +24,22 @@ h3 {
     text-align: left;
     font-size: 30px;
     font-family: Montserrat;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
 }
 
 .divider {
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-top: 75px;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 15px;
+    width: 35%;
+    height: 2px;
     background-color: #49C4D8;
+}
+
+.profile {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* 
@@ -42,21 +48,74 @@ Intro CSS
 ==========================================================
  */
 
-.mdi-hardware-keyboard-arrow-down {
-    color: #49C4D8;
-    display: block;
-    height: 20px;
+.tldr {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    background-color: #97CA56;
+   
 }
 
-.arrow-icon {
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+.tldr:hover {
+    background-color: #97CA56;
 }
 
-.hero-circle .name {
-    font-size: 40px;
+.tldrHeader {
+    color: black;
 }
+
+.tldrMain {
+    text-align: left;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    color: black;
+}
+
+.tldrText {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    
+}
+
+.introText {
+    font-family: Lato;
+
+    font-size: 20px !important;
+
+    text-align: center;
+}
+
+.name {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 150px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.intro {
+    background-color: #49C4D8;
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    color: white;
+    height: 450px;
+}
+
+.loadingText {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+"#EF6C77"
+"#97CA56"
+"#49C4D8"
+"#AE83EE"
+"#3A3B5F"
+"#DBA70E"
+"#C85611"
+*/
 
 /* 
 ==========================================================
@@ -166,7 +225,7 @@ Footer
 
 .footer {
     background-color: #49C4D8;
-    height: 75px;
+    height: 100%;
     margin: 0px;
 }
 
@@ -207,73 +266,3 @@ Footer
 .footertextR a:hover {
     text-decoration: underline;
 }
-
-/* 
-==========================================================
-CSS for ball animations, credit to Dryden Williams, visit 
-his site here, http://www.drydenwilliams.co.uk/ 
-==========================================================
- */
-
-#canvas{
-    width: 100%;
-    height: 100%;
-}
-
-.wrapper {
-    height: 650px;
-}
-
-.nopadding {
-    padding: 0;
-}
-
-.inner {
-    padding-top: 170px;
-}
-
-.wrapper{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 1.2;
-    z-index: 10;
-}
-.casper-holder {
-    font-size: 0;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.casper {
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-.hero-circle {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 19px;
-    color: white;
-    border-radius: 50%;
-    width: 450px;
-    height: 450px;
-    padding: 38px;
-    position: relative;
-}
-
-.hero-circle h1{
-    color: white;
-}
-
-.hero-circle p {
-    color: white;
-    word-spacing: 2px;
-    line-height: inherit;
-    font-size: 28px;
-    font-family: Lato, sans-serif;
-}
-
-
