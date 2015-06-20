@@ -13,11 +13,7 @@
 
 var dots = [],
 	colors = [
-		["#EF6C77",
-"#97CA56",
-"#AE83EE",
-"#49C4D8",
-	]
+		["#EF6C77", "#97CA56", "#AE83EE", "#49C4D8",]
 	]
 	random = colors[Math.floor(Math.random() * colors.length)],
 	canvas = document.getElementById("canvas"),
@@ -127,9 +123,9 @@ DotConstructor.prototype.resizeCanvas = function(e) {
 
 DotConstructor.prototype.callRadius = function( ) {
 	if( canvas.width <= 640 ){
-		return 50;
+		return 0;
 	} else {
-		return 200;
+		return 100;
 	}
 }
 
