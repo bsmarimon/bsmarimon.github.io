@@ -1,1 +1,1 @@
-Personal website built using the Material CSS framework, based on Google's Material Design principles, as well as jQuery and Javascript.
+Personal website.

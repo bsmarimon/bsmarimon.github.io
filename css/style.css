@@ -12,17 +12,21 @@ body {
     font-weight: normal;
 }
 
+p {
+    font-size: 17px !important;
+}
+
 h2 {
     padding-left: 0px;
     margin-left: 0px;
     text-align: left;
     font-family: Montserrat;
-    font-size: 60px;
+    font-size: 30px;
 }
 
 h3 {
     text-align: left;
-    font-size: 30px;
+    font-size: 20px;
     font-family: Montserrat;
     margin-bottom: 0px; 
 }
@@ -53,7 +57,6 @@ Intro CSS
     top: 2%;
     right: 2%;
     background-color: #97CA56;
-   
 }
 
 .tldr:hover {
@@ -71,6 +74,14 @@ Intro CSS
     color: black;
 }
 
+.tldrFooter {
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    color: black;
+    text-align: left;
+}
+
 .tldrText {
     font-family: Lato, sans-serif;
     font-size: 18px;
@@ -79,9 +90,7 @@ Intro CSS
 
 .introText {
     font-family: Lato;
-
     font-size: 20px !important;
-
     text-align: center;
 }
 
@@ -189,12 +198,12 @@ Projects
     border: 3px solid #EF6C77 !important;
     background-color: white !important;
     display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-right: 20px;
     float: left;
     height: 40px;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .htmlTag {
@@ -227,6 +236,7 @@ Footer
     background-color: #49C4D8;
     height: 100%;
     margin: 0px;
+    margin-top: 100px !important;
 }
 
 .footerRow {
@@ -239,14 +249,14 @@ Footer
 
 .footertextL {
     color: white;
-    font-size: 15px;
+    font-size: 12px !important;
     text-align: left;
     font-family: Lato, sans-serif;
 }
 
 .footertextR {
     color: white;
-    font-size: 15px;
+    font-size: 12px !important;
     text-align: right;
     font-family: Lato, sans-serif;
 }
