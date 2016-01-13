@@ -1,19 +1,17 @@
-/* 
-==========================================================
-Global Styles
-==========================================================
- */
-
-body {
-    margin: 0;
-    height:100%;
-    width: 100%;
+.introText {
+    font-family: 'Quattrocento Sans';
+    font-size: 17px !important;
     text-align: center;
-    font-weight: normal;
+    color: #E8E8E8;
 }
 
-p {
-    font-size: 17px !important;
+.name {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 150px;
+    text-align: center;
+    line-height: 25px;
+    color: #E8E8E8;
 }
 
 h2 {
@@ -22,184 +20,146 @@ h2 {
     text-align: left;
     font-family: Montserrat;
     font-size: 30px;
+    margin-top: 0px;
 }
 
-h3 {
-    text-align: left;
-    font-size: 20px;
+.typed-cursor{
+    opacity: 1;
     font-family: Montserrat;
-    margin-bottom: 0px; 
+    font-size: 30px;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
-.divider {
-    margin-bottom: 75px;
-    margin-top: 75px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
-    height: 2px;
-    background-color: #49C4D8;
+.hello {
+	cursor: pointer;
+	display: inline;
 }
-
-.profile {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-/* 
-==========================================================
-Intro CSS
-==========================================================
- */
-
-.tldr {
-    position: fixed;
-    top: 2%;
-    right: 2%;
-    background-color: #97CA56;
-}
-
-.tldr:hover {
-    background-color: #97CA56;
-}
-
-.tldrHeader {
-    color: black;
-}
-
-.tldrMain {
-    text-align: left;
-    font-size: 18px;
-    font-family: Lato, sans-serif;
-    color: black;
-}
-
-.tldrFooter {
-    font-family: Lato, sans-serif;
-    font-size: 15px;
-    margin-top: 50px;
-    color: black;
-    text-align: left;
-}
-
-.tldrText {
-    font-family: Lato, sans-serif;
-    font-size: 18px;
-    
-}
-
-.introText {
-    font-family: Lato;
-    font-size: 20px !important;
-    text-align: center;
-}
-
-.name {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 150px;
-    text-align: center;
-    line-height: 70px;
-}
-
-.intro {
-    background-color: #49C4D8;
-    height: 100%;
-    width: 100%;
-    margin-top: 0px;
-    color: white;
-    height: 450px;
-}
-
-.loadingText {
-    margin: 0px;
-    padding: 0px;
-}
-
-/*
-"#EF6C77"
-"#97CA56"
-"#49C4D8"
-"#AE83EE"
-"#3A3B5F"
-"#DBA70E"
-"#C85611"
-*/
-
-/* 
-==========================================================
-About Section
-==========================================================
- */
 
 .rowFix {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
-.hello {
-    cursor: pointer;
-    margin-bottom: 25px;
-    margin-top: 40px;
-    line-height: 70px;
+
+/*  card background #F7F7F7  */
+
+.card {
+	background-color: #F0F0F0;
+}
+
+u {
+    border-bottom: solid 2px #E8E8E8;
+    display: inline;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.projects {
+	background-color: #66333F;
+	height: 100%;
+	width: 100%;
+	padding-top: 100px;
+}
+
+.projectLink {
+	font-family: Montserrat;
+}
+
+.header {
+	background-color: #3e6169;
+	height: 375px;
+	width: 100%;
 }
 
 .about {
-    background-color: #F7F7F7;
-    height: 100%;
-    width: 100%;
-    margin-top: 0px;
+	background-color: #9F5349;
+	height: 100%;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
 }
 
-.bio {
-    text-align: left;
-    font-size: 20px;
-
+.aboutText { 
+	color: #F7F7F7 !important;
 }
 
-.aboutText {
-    text-align: left;
-    font-family: Lato;
-    font-size: 20px;
-
+.aboutText > p > a {
+	color: #F7F7F7 !important;
 }
 
-/* 
-==========================================================
-Projects
-==========================================================
-*/
-
-.projectAd {
-    font-size: 25px;
-    font-family: Lato, sans-serif;
+.footer {
+	background-color: #3e6169;
+	height: 100%;
+	width: 100%;
 }
 
-
-.projectText {
-    text-align: left;
-    font-family: Lato;
-    font-size: 20px;
-    margin-bottom: 30px;
-    margin-top: 0px;
+a {
+	text-decoration: none;
 }
 
-/*
-"#EF6C77"
-"#97CA56"
-"#49C4D8"
-"#AE83EE"
-"#3A3B5F"
-"#DBA70E"
-"#C85611"
-*/
+h4 {
+	font-family: Montserrat;
+	font-size: 13px;
+	margin-top: 0px;
+}
 
-.nodeTag, .htmlTag, .mongoTag, .jqTag, .meteorTag, .javaTag {
-    border: 3px solid #EF6C77 !important;
-    background-color: white !important;
+h3 {
+	font-family: Montserrat;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: black;
+}
+
+.btn {
+	font-family: Montserrat;
+	color: black !important;
+}
+
+p {
+	font-family: 'Quattrocento Sans', Sans-Serif;
+	font-size: 15px;
+}
+
+li {
+	color: #E8E8E8;
+	font-family: 'Quattrocento Sans';
+}
+
+b {
+	font-family: Montserrat;
+	font-size: 15px;
+	color: black;
+}
+
+.languages {
+	font-family: Montserrat;
+	color: #F7F7F7;
+	margin-top: 0px;
+}
+
+.htmlTag, .meteorTag, .nodeTag, .javaTag {
+    border: 3px solid #EF6C77;
+    background-color: #E8E8E8 !important;
     display: inline-block;
     margin-top: 15px;
-    margin-bottom: 15px;
     margin-right: 20px;
     float: left;
     height: 40px;
@@ -210,55 +170,43 @@ Projects
     border: 3px solid #49C4D8 !important;
 }
 
-.jqTag {
-    border: 3px solid #97CA56 !important;
-}
-
-.mongoTag {
+.nodeTag {
     border: 3px solid #AE83EE !important;
-}
-
-.meteorTag {
-    border: 3px solid #C85611 !important;
 }
 
 .javaTag {
     border: 3px solid #DBA70E !important;
 }
 
-/* 
-==========================================================
-Footer
-==========================================================
-*/
+.footerRow {
+	padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
 
-.footer {
-    background-color: #49C4D8;
-    height: 100%;
-    margin: 0px;
-    margin-top: 100px !important;
 }
 
-.footerRow {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+@media (min-width: 600px) {
+  .footerRow {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  .footertextR {
+  	text-align: right;
+  }
 }
-
 
 .footertextL {
     color: white;
     font-size: 12px !important;
     text-align: left;
-    font-family: Lato, sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .footertextR {
     color: white;
     font-size: 12px !important;
-    text-align: right;
-    font-family: Lato, sans-serif;
+    
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .footertextL a {
