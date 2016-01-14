@@ -1,3 +1,5 @@
+/* This CSS file is as big a mess a my apartment. I apologize for nothing. */
+
 .introText {
     font-family: 'Quattrocento Sans';
     font-size: 17px !important;
@@ -191,21 +193,24 @@ b {
     padding-right: 100px;
   }
   .footertextR {
-  	text-align: right;
+  	text-align: right !important;
+  }
+  .footertextL {
+    text-align: left !important;
   }
 }
 
 .footertextL {
     color: white;
     font-size: 12px !important;
-    text-align: left;
+    text-align: center;
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .footertextR {
     color: white;
     font-size: 12px !important;
-    
+    text-align: center;
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
