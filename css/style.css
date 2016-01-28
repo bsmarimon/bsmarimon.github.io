@@ -25,6 +25,13 @@ h2 {
     margin-top: 0px;
 }
 
+.bio_link:hover {
+  border-bottom: solid 1px #E8E8E8;
+  display: inline;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
 .typed-cursor{
     opacity: 1;
     font-family: Montserrat;
@@ -98,7 +105,7 @@ u {
 	padding-bottom: 50px;
 }
 
-.aboutText { 
+.aboutText {
 	color: #F7F7F7 !important;
 }
 
