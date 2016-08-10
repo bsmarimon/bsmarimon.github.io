@@ -1,0 +1,102 @@
+.introText {
+  font-family: 'Quattrocento Sans';
+  font-size: 17px !important;
+  text-align: center;
+  color: #E8E8E8; }
+
+h2 {
+  padding-left: 0px;
+  margin-left: 0px;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 30px;
+  margin-top: 0px; }
+
+.bio_link:hover {
+  cursor: pointer; }
+
+.typed-cursor {
+  opacity: 1;
+  font-family: Montserrat;
+  font-size: 30px;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.hello {
+  cursor: pointer;
+  display: inline; }
+
+.rowFix {
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+u {
+  border-bottom: solid 2px #E8E8E8;
+  display: inline;
+  padding-bottom: 5px;
+  text-decoration: none; }
+
+.about {
+  background-color: #003967;
+  height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px; }
+
+.aboutText {
+  color: #F7F7F7 !important; }
+
+.aboutText > p > a {
+  color: #F7F7F7 !important; }
+
+a {
+  text-decoration: none; }
+
+h4 {
+  font-family: Montserrat;
+  font-size: 13px;
+  margin-top: 0px; }
+
+h3 {
+  font-family: Montserrat;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: black; }
+
+p {
+  font-family: 'Quattrocento Sans', Sans-Serif;
+  font-size: 15px; }
+
+li {
+  color: #E8E8E8;
+  font-family: 'Quattrocento Sans'; }
+
+b {
+  font-family: Montserrat;
+  font-size: 15px;
+  color: black; }
+
+/*# sourceMappingURL=main.css.map */
