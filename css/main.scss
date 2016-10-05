@@ -121,3 +121,14 @@ b {
 	font-family: $header-stack;
 	font-size: 14px;
 }
+
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    height: 75%;
+    width: 80%;
+    flex-direction: column;
+    padding-left: 10%;
+  }
+}

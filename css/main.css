@@ -92,4 +92,12 @@ b {
   font-family: Montserrat, Sans-Serif;
   font-size: 14px; }
 
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    height: 75%;
+    width: 80%;
+    flex-direction: column;
+    padding-left: 10%; } }
+
 /*# sourceMappingURL=main.css.map */
