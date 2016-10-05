@@ -17,6 +17,7 @@ body, html {
 
 .highlight {
   color: $primary-blue;
+  font-weight: bold;
   & a {
     color: $primary-blue !important;
   }
