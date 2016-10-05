@@ -1,102 +1,94 @@
-.introText {
-  font-family: 'Quattrocento Sans';
-  font-size: 17px !important;
-  text-align: center;
-  color: #E8E8E8; }
-
-h2 {
-  padding-left: 0px;
-  margin-left: 0px;
-  text-align: left;
-  font-family: Montserrat;
-  font-size: 30px;
-  margin-top: 0px; }
+body, html {
+  background-color: "white";
+  padding: 0;
+  margin: 0;
+  height: 100%; }
 
 .bio_link:hover {
   cursor: pointer; }
 
-.typed-cursor {
-  opacity: 1;
-  font-family: Montserrat;
-  font-size: 30px;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite; }
+.highlight {
+  color: #2196F3; }
+  .highlight a {
+    color: #2196F3 !important; }
 
-@keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-.hello {
-  cursor: pointer;
-  display: inline; }
+.container {
+  display: flex;
+  height: 65%;
+  width: 40%;
+  flex-direction: column;
+  padding-left: 150px; }
 
-.rowFix {
-  margin-bottom: 0px;
-  padding-bottom: 0px; }
-
-u {
-  border-bottom: solid 2px #E8E8E8;
-  display: inline;
-  padding-bottom: 5px;
-  text-decoration: none; }
-
-.about {
-  background-color: #003967;
-  height: 100vh;
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 50px; }
+.absoluteCenter {
+  justify-content: center;
+  align-items: center; }
 
 .aboutText {
-  color: #F7F7F7 !important; }
+  color: black; }
 
-.aboutText > p > a {
-  color: #F7F7F7 !important; }
+.projectsHeader {
+  margin-top: 50px; }
+
+.tags {
+  display: flex;
+  flex-direction: row; }
+
+.tag, .react {
+  padding: 8px 12px 8px 12px;
+  margin-right: 24px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  font-family: Quattrocento Sans, Sans-Serif; }
+  .tag > span, .react > span {
+    font-size: 14px; }
+
+.react {
+  border: 2px solid #2196F3;
+  background-color: #2196F3;
+  width: 100px; }
+  .react > span {
+    color: white; }
+
+.about > p > a {
+  color: black !important; }
+
+.projects {
+  margin-bottom: 115px; }
 
 a {
   text-decoration: none; }
 
-h4 {
-  font-family: Montserrat;
-  font-size: 13px;
-  margin-top: 0px; }
+h2 {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  text-align: left;
+  font-family: Montserrat, Sans-Serif;
+  color: #2196F3;
+  font-size: 30px; }
 
 h3 {
-  font-family: Montserrat;
-  font-size: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: black; }
+  font-family: Montserrat, Sans-Serif;
+  font-size: 14px;
+  color: #2196F3;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-top: 0px; }
 
 p {
-  font-family: 'Quattrocento Sans', Sans-Serif;
-  font-size: 15px; }
+  font-family: Quattrocento Sans, Sans-Serif;
+  font-size: 14px;
+  line-height: 20px; }
 
 li {
-  color: #E8E8E8;
-  font-family: 'Quattrocento Sans'; }
+  color: "white";
+  font-family: Quattrocento Sans, Sans-Serif; }
 
 b {
-  font-family: Montserrat;
-  font-size: 15px;
-  color: black; }
+  font-family: Montserrat, Sans-Serif;
+  font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */

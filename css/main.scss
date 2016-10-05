@@ -1,116 +1,122 @@
-$primary-color: #003967;
-$off-white: #E8E8E8;
+$body-stack: Quattrocento Sans, Sans-Serif;
+$header-stack: Montserrat, Sans-Serif;
+$white: 'white';
+$primary-blue: #2196F3;
+$primary-green: #4CAF50;
 
-.introText {
-    font-family: 'Quattrocento Sans';
-    font-size: 17px !important;
-    text-align: center;
-    color: $off-white;
-}
-
-h2 {
-    padding-left: 0px;
-    margin-left: 0px;
-    text-align: left;
-    font-family: Montserrat;
-    font-size: 30px;
-    margin-top: 0px;
+body, html {
+  background-color: $white;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .bio_link:hover {
   cursor: pointer;
 }
 
-.typed-cursor{
-    opacity: 1;
-    font-family: Montserrat;
-    font-size: 30px;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+.highlight {
+  color: $primary-blue;
+  & a {
+    color: $primary-blue !important;
+  }
 }
 
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+.container {
+  display: flex;
+  height: 65%;
+  width: 40%;
+  flex-direction: column;
+  padding-left: 150px;
 }
 
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-.hello {
-	cursor: pointer;
-	display: inline;
-}
-
-.rowFix {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-u {
-    border-bottom: solid 2px $off-white;
-    display: inline;
-    padding-bottom: 5px;
-    text-decoration: none;
-}
-
-.about {
-	background-color: $primary-color;
-	height: 100vh;
-	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 50px;
+.absoluteCenter {
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutText {
-	color: #F7F7F7 !important;
+	color: black;
 }
 
-.aboutText > p > a {
-	color: #F7F7F7 !important;
+.projectsHeader {
+  margin-top: 50px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag {
+  padding: 8px 12px 8px 12px;
+  margin-right: 24px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  font-family: $body-stack;
+  & > span {
+    font-size: 14px;
+  }
+}
+
+// Extend in case ever wanted to do different color for each
+.react {
+  @extend .tag;
+  border: 2px solid $primary-blue;
+  background-color: $primary-blue;
+  width: 100px;
+  & > span {
+    color: white;
+  }
+}
+
+.about > p > a {
+  // Won't change on link click!
+  color: black !important;
+}
+
+.projects {
+  margin-bottom: 115px;
 }
 
 a {
 	text-decoration: none;
 }
 
-h4 {
-	font-family: Montserrat;
-	font-size: 13px;
-	margin-top: 0px;
+h2 {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: left;
+    font-family: $header-stack;
+    color: $primary-blue;
+    font-size: 30px;
 }
 
 h3 {
-	font-family: Montserrat;
-	font-size: 15px;
+	font-family: $header-stack;
+	font-size: 14px;
+  color: $primary-blue;
+  padding-left: 0px;
+  margin-left: 0px;
 	margin-top: 0px;
-	margin-bottom: 0px;
-	color: black;
 }
 
 p {
-	font-family: 'Quattrocento Sans', Sans-Serif;
-	font-size: 15px;
+	font-family: $body-stack;
+	font-size: 14px;
+  line-height: 20px;
 }
 
 li {
-	color: $off-white;
-	font-family: 'Quattrocento Sans';
+	color: $white;
+	font-family: $body-stack;
 }
 
 b {
-	font-family: Montserrat;
-	font-size: 15px;
-	color: black;
+	font-family: $header-stack;
+	font-size: 14px;
 }
