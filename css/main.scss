@@ -89,7 +89,7 @@ a {
 
 h2 {
     padding-left: 0px;
-    margin-top: 0px;
+    margin-top: 25px;
     margin-left: 0px;
     text-align: left;
     font-family: $header-stack;
@@ -125,10 +125,15 @@ b {
 
 @media (max-width: 800px) {
   .container {
-    display: flex;
-    height: 75%;
-    width: 80%;
-    flex-direction: column;
-    padding-left: 10%;
+    display: block !important;
+    height: auto !important;
+    width: 80% !important;
+    padding-left: 10% !important;
+  }
+  h2 {
+    margin-top: 25px !important;
+  }
+  .projects {
+    margin-top: 25px !important;
   }
 }
