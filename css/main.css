@@ -78,7 +78,7 @@ a {
     line-height: 2.5rem; }
 
 .project-container {
-  padding: 7rem 15rem 7rem 15rem;
+  padding: 7rem 15rem 0rem 15rem;
   background-color: #80D8FF;
   display: flex;
   flex-wrap: wrap;
