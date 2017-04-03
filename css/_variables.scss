@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Avenir-Bold';
+  src: url('./fonts/AvenirNextLTPro-Demi.otf')  format('truetype'),
+}
+
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url('./fonts/AvenirNextLTPro-Regular.otf')  format('truetype'),
+}
+
+$font-header: 'Avenir-Bold', sans-serif;
+$font-body: 'Avenir-Regular', sans-serif;
+$highlight: #80D8FF;
+$about-background: #F8F8F8;
+$project-background:  #80D8FF;
+
+// travel blog SCSS
+$blog-background-color: #F8F8F8;
+
+
+$default-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$default-tag-padding: 0.5rem 1.5rem 0.35rem 1.5rem;
+
+@mixin transition($props) {
+  transition: $props;
+  -ms-transition: $props;
+  -moz-transition: $props;
+  -webkit-transition: $props;
+}
+
+@mixin container-pad($padding-top) {
+  padding: $padding-top 15rem $padding-top 15rem;
+}

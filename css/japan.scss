@@ -1,0 +1,237 @@
+.japan-container {
+  @include container-pad(7rem);
+  background-color: $blog-background-color;
+  ::selection {
+    background-color: #FFC3C1;
+  }
+}
+
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0rem;
+  padding: 0rem;
+  background-color: $blog-background-color;
+  video {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: auto;
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 4rem 2rem 4rem;
+  background-color: white;
+  opacity: 0.85;
+  .title {
+    font-family: $font-header;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .sub-title {
+    letter-spacing: 0.15rem;
+  }
+}
+
+.main-container {
+  padding: 5rem 20rem 5rem 20rem;
+}
+
+.travel-blog-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  font-family: $font-header;
+  .color-pallete {
+    margin-bottom: 1.5rem;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .title {
+    font-family: $font-header;
+  }
+}
+
+.marker {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include transition(all 0.2s ease-in-out);
+  .hex-code {
+    visibility: hidden;
+    color: white;
+    font-size: 0.8rem;
+    font-family: $font-body;
+  }
+  &:hover .hex-code {
+    visibility: visible;
+  }
+  .black {
+    color: black;
+  }
+  &:hover {
+    width: auto;
+    padding: 1rem 1.2rem 0.95rem 1.1rem;
+  }
+}
+
+.itsukushima {
+  .marker-1 {
+    @extend .marker;
+    background-color: #9F1B00;
+  }
+  .marker-2 {
+    @extend .marker;
+    background-color: #8fa49d;
+  }
+  .marker-3 {
+    @extend .marker;
+    background-color: #edcd54;
+  }
+  .marker-4 {
+    @extend .marker;
+    background-color: #515418;
+  }
+  .marker-5 {
+    @extend .marker;
+    background-color: #efe7dc;
+  }
+}
+.tokyo {
+  .marker-1 {
+    @extend .marker;
+    background-color: #e75e5a;
+  }
+  .marker-2 {
+    @extend .marker;
+    background-color: #44c5f1;
+  }
+  .marker-3 {
+    @extend .marker;
+    background-color: #cc98c1;
+  }
+  .marker-4 {
+    @extend .marker;
+    background-color: #374244;
+  }
+  .marker-5 {
+    @extend .marker;
+    background-color: #008b00;
+  }
+}
+
+.travel-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .travel-intro {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
+}
+
+.photo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.photo-caption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  padding: 0rem 3.5rem;
+  .photo-container {
+    width: 40%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .caption {
+    width: 50%;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}
+
+.travel-vlogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .title {
+    font-family: $font-header;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  video {
+    width: 35%;
+    margin: 0rem 2rem;
+  }
+}
+
+.photo-one-third {
+  @extend .photo;
+  width: 31%;
+}
+
+.photo-two-thirds {
+  @extend .photo;
+  width: 64%;
+}
+
+.photo-one-half {
+  @extend .photo;
+  width: 48%;
+}
+
+@media (max-width: 600px) {
+  .photo {
+    width: 100% !important;
+  }
+  .photo-caption {
+    padding: 0rem;
+    flex-direction: column;
+    .photo-container {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .caption {
+      width: 75%;
+    }
+  }
+}

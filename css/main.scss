@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'reset';
 @import 'tags';
+@import 'japan';
 
 .highlight {
   border-bottom: 5px solid $highlight;
@@ -31,6 +32,7 @@
   .info {
     flex: 2;
     font-family: $font-body;
+    font-size: 0.9rem;
     line-height: 2.5rem;
   }
 }
@@ -58,7 +60,7 @@
     margin-bottom: 2rem;
     .title {
       flex: 3;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     .link {
       flex: 1;
@@ -69,6 +71,7 @@
   }
   .description {
     font-family: $font-body;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
   }
 }
@@ -92,7 +95,8 @@
 
 @media (max-width: 900px) {
   .about-container,
-  .project-container {
+  .project-container,
+  .japan-container {
     padding: 5rem;
     .card {
       width: 100%;
@@ -102,7 +106,8 @@
 
 @media (max-width: 600px) {
   .about-container,
-  .project-container {
+  .project-container,
+  .japan-container {
     padding: 2rem;
   }
 }

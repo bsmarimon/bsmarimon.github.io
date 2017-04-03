@@ -7,6 +7,7 @@
 *,
 *:after,
 *:before {
+  font-family: "Avenir-Regular", sans-serif;
   box-sizing: border-box;
   position: relative;
   padding: 0;
@@ -50,6 +51,184 @@ a {
     margin-bottom: 1rem;
     border-radius: 37px; }
 
+.japan-container {
+  padding: 7rem 15rem 7rem 15rem;
+  background-color: #F8F8F8; }
+  .japan-container ::selection {
+    background-color: #FFC3C1; }
+
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0rem;
+  padding: 0rem;
+  background-color: #F8F8F8; }
+  .video-container video {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: auto; }
+
+.video-overlay {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 4rem 2rem 4rem;
+  background-color: white;
+  opacity: 0.85; }
+  .video-overlay .title {
+    font-family: "Avenir-Bold", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .video-overlay .sub-title {
+    letter-spacing: 0.15rem; }
+
+.main-container {
+  padding: 5rem 20rem 5rem 20rem; }
+
+.travel-blog-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  font-family: "Avenir-Bold", sans-serif; }
+  .travel-blog-title .color-pallete {
+    margin-bottom: 1.5rem;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: row; }
+  .travel-blog-title .title {
+    font-family: "Avenir-Bold", sans-serif; }
+
+.marker, .itsukushima .marker-1, .itsukushima .marker-2, .itsukushima .marker-3, .itsukushima .marker-4, .itsukushima .marker-5, .tokyo .marker-1, .tokyo .marker-2, .tokyo .marker-3, .tokyo .marker-4, .tokyo .marker-5 {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out; }
+  .marker .hex-code, .itsukushima .marker-1 .hex-code, .itsukushima .marker-2 .hex-code, .itsukushima .marker-3 .hex-code, .itsukushima .marker-4 .hex-code, .itsukushima .marker-5 .hex-code, .tokyo .marker-1 .hex-code, .tokyo .marker-2 .hex-code, .tokyo .marker-3 .hex-code, .tokyo .marker-4 .hex-code, .tokyo .marker-5 .hex-code {
+    visibility: hidden;
+    color: white;
+    font-size: 0.8rem;
+    font-family: "Avenir-Regular", sans-serif; }
+  .marker:hover .hex-code, .itsukushima .marker-1:hover .hex-code, .itsukushima .marker-2:hover .hex-code, .itsukushima .marker-3:hover .hex-code, .itsukushima .marker-4:hover .hex-code, .itsukushima .marker-5:hover .hex-code, .tokyo .marker-1:hover .hex-code, .tokyo .marker-2:hover .hex-code, .tokyo .marker-3:hover .hex-code, .tokyo .marker-4:hover .hex-code, .tokyo .marker-5:hover .hex-code {
+    visibility: visible; }
+  .marker .black, .itsukushima .marker-1 .black, .itsukushima .marker-2 .black, .itsukushima .marker-3 .black, .itsukushima .marker-4 .black, .itsukushima .marker-5 .black, .tokyo .marker-1 .black, .tokyo .marker-2 .black, .tokyo .marker-3 .black, .tokyo .marker-4 .black, .tokyo .marker-5 .black {
+    color: black; }
+  .marker:hover, .itsukushima .marker-1:hover, .itsukushima .marker-2:hover, .itsukushima .marker-3:hover, .itsukushima .marker-4:hover, .itsukushima .marker-5:hover, .tokyo .marker-1:hover, .tokyo .marker-2:hover, .tokyo .marker-3:hover, .tokyo .marker-4:hover, .tokyo .marker-5:hover {
+    width: auto;
+    padding: 1rem 1.2rem 0.95rem 1.1rem; }
+
+.itsukushima .marker-1 {
+  background-color: #9F1B00; }
+.itsukushima .marker-2 {
+  background-color: #8fa49d; }
+.itsukushima .marker-3 {
+  background-color: #edcd54; }
+.itsukushima .marker-4 {
+  background-color: #515418; }
+.itsukushima .marker-5 {
+  background-color: #efe7dc; }
+
+.tokyo .marker-1 {
+  background-color: #e75e5a; }
+.tokyo .marker-2 {
+  background-color: #44c5f1; }
+.tokyo .marker-3 {
+  background-color: #cc98c1; }
+.tokyo .marker-4 {
+  background-color: #374244; }
+.tokyo .marker-5 {
+  background-color: #008b00; }
+
+.travel-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .travel-photos .travel-intro {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem; }
+
+.photo, .photo-one-third, .photo-two-thirds, .photo-one-half {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem; }
+  .photo img, .photo-one-third img, .photo-two-thirds img, .photo-one-half img {
+    width: 100%;
+    height: auto; }
+
+.photo-caption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  padding: 0rem 3.5rem; }
+  .photo-caption .photo-container {
+    width: 40%; }
+    .photo-caption .photo-container img {
+      width: 100%;
+      height: auto; }
+  .photo-caption .caption {
+    width: 50%;
+    font-size: 0.9rem;
+    line-height: 1.5rem; }
+
+.travel-vlogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .travel-vlogs .title {
+    font-family: "Avenir-Bold", sans-serif;
+    width: 100%;
+    margin-bottom: 3rem; }
+  .travel-vlogs video {
+    width: 35%;
+    margin: 0rem 2rem; }
+
+.photo-one-third {
+  width: 31%; }
+
+.photo-two-thirds {
+  width: 64%; }
+
+.photo-one-half {
+  width: 48%; }
+
+@media (max-width: 600px) {
+  .photo, .photo-one-third, .photo-two-thirds, .photo-one-half {
+    width: 100% !important; }
+
+  .photo-caption {
+    padding: 0rem;
+    flex-direction: column; }
+    .photo-caption .photo-container {
+      width: 100%;
+      margin-bottom: 1rem; }
+    .photo-caption .caption {
+      width: 75%; } }
 .highlight {
   border-bottom: 5px solid #80D8FF;
   padding-bottom: 1px; }
@@ -62,7 +241,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FAFAFA;
+  background-color: #F8F8F8;
   padding: 10rem 15rem 10rem 15rem; }
   .about-container .profile-picture {
     flex: 1;
@@ -75,6 +254,7 @@ a {
   .about-container .info {
     flex: 2;
     font-family: "Avenir-Regular", sans-serif;
+    font-size: 0.9rem;
     line-height: 2.5rem; }
 
 .project-container {
@@ -99,7 +279,7 @@ a {
     margin-bottom: 2rem; }
     .card .header .title {
       flex: 3;
-      font-size: 1.2rem; }
+      font-size: 1rem; }
     .card .header .link {
       flex: 1;
       text-align: right;
@@ -107,6 +287,7 @@ a {
       text-align: right; }
   .card .description {
     font-family: "Avenir-Regular", sans-serif;
+    font-size: 0.9rem;
     margin-bottom: 2rem; }
 
 @media (max-width: 1350px) {
@@ -119,14 +300,17 @@ a {
     display: none; } }
 @media (max-width: 900px) {
   .about-container,
-  .project-container {
+  .project-container,
+  .japan-container {
     padding: 5rem; }
     .about-container .card,
-    .project-container .card {
+    .project-container .card,
+    .japan-container .card {
       width: 100%; } }
 @media (max-width: 600px) {
   .about-container,
-  .project-container {
+  .project-container,
+  .japan-container {
     padding: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */
