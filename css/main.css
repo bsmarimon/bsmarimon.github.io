@@ -268,7 +268,7 @@ a {
     flex-direction: column; }
     .travel-path-container .travel-path img {
       display: none; }
-    .travel-path-container .travel-path span {
+    .travel-path-container .travel-path a {
       width: 100%; } }
 .highlight {
   border-bottom: 5px solid #80D8FF;
