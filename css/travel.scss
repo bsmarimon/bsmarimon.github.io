@@ -47,14 +47,19 @@
 .travel-path-container {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .travel-path {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: #f0f0f0;
   border-radius: 5px;
   padding: 2rem;
+  line-height: 2rem;
   img {
     height: 0.5rem;
     width: auto;
@@ -146,7 +151,7 @@
   width: 48%;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .photo {
     width: 100% !important;
   }
@@ -159,6 +164,38 @@
     }
     .caption {
       width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .travel-container {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-overlay {
+    .sub-title {
+      display: none;
+    }
+  }
+  .travel-container {
+    padding: 2rem;
+  }
+  .travel-path-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .travel-path {
+      img {
+        display: none;
+      }
+      span {
+        width: 100%;
+      }
     }
   }
 }

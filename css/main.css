@@ -51,7 +51,7 @@ a {
     margin-bottom: 1rem;
     border-radius: 37px; }
 
-.marker, .beijing .marker-1, .beijing .marker-2, .beijing .marker-3, .tokyo .marker-1, .tokyo .marker-2, .tokyo .marker-3, .tokyo .marker-4, .tokyo .marker-5, .miyajima .marker-1, .miyajima .marker-2, .miyajima .marker-3, .miyajima .marker-4, .miyajima .marker-5 {
+.marker, .kyoto .marker-1, .kyoto .marker-2, .kyoto .marker-3, .nara .marker-1, .nara .marker-2, .beijing .marker-1, .beijing .marker-2, .beijing .marker-3, .tokyo .marker-1, .tokyo .marker-2, .tokyo .marker-3, .tokyo .marker-4, .tokyo .marker-5, .miyajima .marker-1, .miyajima .marker-2, .miyajima .marker-3, .miyajima .marker-4, .miyajima .marker-5 {
   height: 1.5rem;
   width: 1.5rem;
   display: flex;
@@ -61,18 +61,30 @@ a {
   -ms-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out; }
-  .marker .hex-code, .beijing .marker-1 .hex-code, .beijing .marker-2 .hex-code, .beijing .marker-3 .hex-code, .tokyo .marker-1 .hex-code, .tokyo .marker-2 .hex-code, .tokyo .marker-3 .hex-code, .tokyo .marker-4 .hex-code, .tokyo .marker-5 .hex-code, .miyajima .marker-1 .hex-code, .miyajima .marker-2 .hex-code, .miyajima .marker-3 .hex-code, .miyajima .marker-4 .hex-code, .miyajima .marker-5 .hex-code {
+  .marker .hex-code, .kyoto .marker-1 .hex-code, .kyoto .marker-2 .hex-code, .kyoto .marker-3 .hex-code, .nara .marker-1 .hex-code, .nara .marker-2 .hex-code, .beijing .marker-1 .hex-code, .beijing .marker-2 .hex-code, .beijing .marker-3 .hex-code, .tokyo .marker-1 .hex-code, .tokyo .marker-2 .hex-code, .tokyo .marker-3 .hex-code, .tokyo .marker-4 .hex-code, .tokyo .marker-5 .hex-code, .miyajima .marker-1 .hex-code, .miyajima .marker-2 .hex-code, .miyajima .marker-3 .hex-code, .miyajima .marker-4 .hex-code, .miyajima .marker-5 .hex-code {
     visibility: hidden;
     color: white;
     font-size: 0.8rem;
     font-family: "Avenir-Regular", sans-serif; }
-  .marker:hover .hex-code, .beijing .marker-1:hover .hex-code, .beijing .marker-2:hover .hex-code, .beijing .marker-3:hover .hex-code, .tokyo .marker-1:hover .hex-code, .tokyo .marker-2:hover .hex-code, .tokyo .marker-3:hover .hex-code, .tokyo .marker-4:hover .hex-code, .tokyo .marker-5:hover .hex-code, .miyajima .marker-1:hover .hex-code, .miyajima .marker-2:hover .hex-code, .miyajima .marker-3:hover .hex-code, .miyajima .marker-4:hover .hex-code, .miyajima .marker-5:hover .hex-code {
+  .marker:hover .hex-code, .kyoto .marker-1:hover .hex-code, .kyoto .marker-2:hover .hex-code, .kyoto .marker-3:hover .hex-code, .nara .marker-1:hover .hex-code, .nara .marker-2:hover .hex-code, .beijing .marker-1:hover .hex-code, .beijing .marker-2:hover .hex-code, .beijing .marker-3:hover .hex-code, .tokyo .marker-1:hover .hex-code, .tokyo .marker-2:hover .hex-code, .tokyo .marker-3:hover .hex-code, .tokyo .marker-4:hover .hex-code, .tokyo .marker-5:hover .hex-code, .miyajima .marker-1:hover .hex-code, .miyajima .marker-2:hover .hex-code, .miyajima .marker-3:hover .hex-code, .miyajima .marker-4:hover .hex-code, .miyajima .marker-5:hover .hex-code {
     visibility: visible; }
-  .marker .black, .beijing .marker-1 .black, .beijing .marker-2 .black, .beijing .marker-3 .black, .tokyo .marker-1 .black, .tokyo .marker-2 .black, .tokyo .marker-3 .black, .tokyo .marker-4 .black, .tokyo .marker-5 .black, .miyajima .marker-1 .black, .miyajima .marker-2 .black, .miyajima .marker-3 .black, .miyajima .marker-4 .black, .miyajima .marker-5 .black {
+  .marker .black, .kyoto .marker-1 .black, .kyoto .marker-2 .black, .kyoto .marker-3 .black, .nara .marker-1 .black, .nara .marker-2 .black, .beijing .marker-1 .black, .beijing .marker-2 .black, .beijing .marker-3 .black, .tokyo .marker-1 .black, .tokyo .marker-2 .black, .tokyo .marker-3 .black, .tokyo .marker-4 .black, .tokyo .marker-5 .black, .miyajima .marker-1 .black, .miyajima .marker-2 .black, .miyajima .marker-3 .black, .miyajima .marker-4 .black, .miyajima .marker-5 .black {
     color: black; }
-  .marker:hover, .beijing .marker-1:hover, .beijing .marker-2:hover, .beijing .marker-3:hover, .tokyo .marker-1:hover, .tokyo .marker-2:hover, .tokyo .marker-3:hover, .tokyo .marker-4:hover, .tokyo .marker-5:hover, .miyajima .marker-1:hover, .miyajima .marker-2:hover, .miyajima .marker-3:hover, .miyajima .marker-4:hover, .miyajima .marker-5:hover {
+  .marker:hover, .kyoto .marker-1:hover, .kyoto .marker-2:hover, .kyoto .marker-3:hover, .nara .marker-1:hover, .nara .marker-2:hover, .beijing .marker-1:hover, .beijing .marker-2:hover, .beijing .marker-3:hover, .tokyo .marker-1:hover, .tokyo .marker-2:hover, .tokyo .marker-3:hover, .tokyo .marker-4:hover, .tokyo .marker-5:hover, .miyajima .marker-1:hover, .miyajima .marker-2:hover, .miyajima .marker-3:hover, .miyajima .marker-4:hover, .miyajima .marker-5:hover {
     width: auto;
     padding: 1rem 1.2rem 0.95rem 1.1rem; }
+
+.kyoto .marker-1 {
+  background-color: #B22A01; }
+.kyoto .marker-2 {
+  background-color: #D7C276; }
+.kyoto .marker-3 {
+  background-color: #4D5969; }
+
+.nara .marker-1 {
+  background-color: #4F91DB; }
+.nara .marker-2 {
+  background-color: #EFB4C3; }
 
 .beijing .marker-1 {
   background-color: #A2B2BF; }
@@ -143,13 +155,18 @@ a {
 .travel-path-container {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center; }
 
 .travel-path {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: #f0f0f0;
   border-radius: 5px;
-  padding: 2rem; }
+  padding: 2rem;
+  line-height: 2rem; }
   .travel-path img {
     height: 0.5rem;
     width: auto;
@@ -221,7 +238,7 @@ a {
 .photo-one-half {
   width: 48%; }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .photo, .photo-one-third, .photo-two-thirds, .photo-one-half {
     width: 100% !important; }
 
@@ -233,6 +250,26 @@ a {
       margin-bottom: 1rem; }
     .photo-caption .caption {
       width: 75%; } }
+@media screen and (max-width: 900px) {
+  .travel-container {
+    padding: 5rem; } }
+@media screen and (max-width: 600px) {
+  .img-overlay .sub-title {
+    display: none; }
+
+  .travel-container {
+    padding: 2rem; }
+
+  .travel-path-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .travel-path-container .travel-path img {
+      display: none; }
+    .travel-path-container .travel-path span {
+      width: 100%; } }
 .highlight {
   border-bottom: 5px solid #80D8FF;
   padding-bottom: 1px; }
@@ -294,27 +331,24 @@ a {
     font-size: 0.9rem;
     margin-bottom: 2rem; }
 
-@media (max-width: 1350px) {
+@media screen and (max-width: 1350px) {
   .project-container {
     justify-content: center; }
     .project-container .card {
       width: 90%; } }
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .about-container .profile-picture {
     display: none; } }
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .about-container,
-  .project-container,
-  .japan-container {
+  .project-container {
     padding: 5rem; }
     .about-container .card,
-    .project-container .card,
-    .japan-container .card {
+    .project-container .card {
       width: 100%; } }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .about-container,
-  .project-container,
-  .japan-container {
+  .project-container {
     padding: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -23,6 +23,32 @@
   }
 }
 
+.kyoto {
+  .marker-1 {
+    @extend .marker;
+    background-color: #B22A01;
+  }
+  .marker-2 {
+    @extend .marker;
+    background-color: #D7C276;
+  }
+  .marker-3 {
+    @extend .marker;
+    background-color: #4D5969;
+  }
+}
+
+.nara {
+  .marker-1 {
+    @extend .marker;
+    background-color: #4F91DB;
+  }
+  .marker-2 {
+    @extend .marker;
+    background-color: #EFB4C3;
+  }
+}
+
 .beijing {
   .marker-1 {
     @extend .marker;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link href="css/main.css" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <script src="js/smooth-scroll.min.js"></script>
   </head>
   <body>
 
@@ -20,18 +21,23 @@
     <div class="travel-container">
       <div class="travel-path-container">
         <div class="travel-path">
-          <span>Beijing</span>
-          <img src="img/forward-arrow-black.png"/><span>Osaka</span>
-          <img src="img/forward-arrow-black.png"/><span>Nara</span>
-          <img src="img/forward-arrow-black.png"/><span>Kyoto</span>
-          <img src="img/forward-arrow-black.png"/><span>Hiroshima</span>
-          <img src="img/forward-arrow-black.png"/><span>Tokyo</span>
+          <a data-scroll href="#beijing">Beijing</a>
+          <img src="img/forward-arrow-black.png"/>
+          <a data-scroll href="#osaka">Osaka</a>
+          <img src="img/forward-arrow-black.png"/>
+          <a data-scroll href="#nara">Nara</a>
+          <img src="img/forward-arrow-black.png"/>
+          <a data-scroll href="#kyoto">Kyoto</a>
+          <img src="img/forward-arrow-black.png"/>
+          <a data-scroll href="#hiroshima">Hiroshima</a>
+          <img src="img/forward-arrow-black.png"/>
+          <a data-scroll href="#tokyo">Tokyo</a>
         </div>
       </div>
 
       <!-- BEIJING -->
 
-      <div class="travel-blog-title beijing">
+      <div id="beijing" class="travel-blog-title beijing">
         <div class="color-pallete">
           <div class="marker-1">
             <div class="hex-code">#A2B2BF</div>
@@ -60,9 +66,59 @@
         </div>
       </div>
 
+      <!-- NARA -->
+
+      <div id="nara" class="travel-blog-title nara">
+        <div class="color-pallete">
+          <div class="marker-1">
+            <div class="hex-code">#4F91DB</div>
+          </div>
+          <div class="marker-2">
+            <div class="hex-code">#EFB4C3</div>
+          </div>
+        </div>
+        <div class="title">Nara</div>
+      </div>
+      <div class="travel-photos">
+        <div class="photo-one-third">
+          <img class="image" src="img/nara-cherry-blossoms.jpg" />
+        </div>
+        <div class="photo-two-thirds">
+          <img class="image" src="img/nara-todaiji.jpg" />
+        </div>
+      </div>
+
+      <!-- KYOTO -->
+
+      <div id="kyoto" class="travel-blog-title kyoto">
+        <div class="color-pallete">
+          <div class="marker-1">
+            <div class="hex-code">#B22A01</div>
+          </div>
+          <div class="marker-2">
+            <div class="hex-code">#D7C276</div>
+          </div>
+          <div class="marker-3">
+            <div class="hex-code">#4D5969</div>
+          </div>
+        </div>
+        <div class="title">Kyoto</div>
+      </div>
+      <div class="travel-photos">
+        <div class="photo">
+          <img class="image" src="img/kyoto-torii-gate.jpg" />
+        </div>
+        <div class="photo-one-half">
+          <img class="image" src="img/kyoto-shrines.jpg" />
+        </div>
+        <div class="photo-one-half">
+          <img class="image" src="img/kyoto-golden-shrine.jpg" />
+        </div>
+      </div>
+
       <!-- MIYAJIMA -->
 
-      <div class="travel-blog-title miyajima">
+      <div id="hiroshima" class="travel-blog-title miyajima">
         <div class="color-pallete">
           <div class="marker-1">
             <div class="hex-code">#9F1B00</div>
@@ -106,7 +162,7 @@
 
       <!-- TOKYO -->
 
-      <div class="travel-blog-title tokyo">
+      <div id="tokyo" class="travel-blog-title tokyo">
         <div class="color-pallete">
           <div class="marker-1">
             <div class="hex-code">#E75E5A</div>
@@ -133,8 +189,11 @@
         <div class="photo-one-half">
           <img class="image" src="img/tokyo-street-night-2.jpg" />
         </div>
-        <div class="photo">
+        <div class="photo-two-thirds">
           <img class="image" src="img/tokyo-construction-2.jpg" />
+        </div>
+        <div class="photo-one-third">
+          <img class="image" src="img/tokyo-construction-1.jpg" />
         </div>
         <div class="photo-one-half">
           <img class="image" src="img/tokyo-cherry-blossom-1.jpg" />
@@ -162,8 +221,10 @@
         </div>
       </div>
 
-
-
     </div>
+
+    <script>
+    	smoothScroll.init();
+    </script>
   </body>
 </html>

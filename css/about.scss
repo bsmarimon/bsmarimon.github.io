@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media screen and (max-width: 1350px) {
   .project-container {
     justify-content: center;
     .card {
@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .about-container {
     .profile-picture {
       display: none;
@@ -88,10 +88,9 @@
   }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .about-container,
-  .project-container,
-  .japan-container {
+  .project-container {
     padding: 5rem;
     .card {
       width: 100%;
@@ -99,10 +98,9 @@
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .about-container,
-  .project-container,
-  .japan-container {
+  .project-container {
     padding: 2rem;
   }
 }
