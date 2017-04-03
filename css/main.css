@@ -51,27 +51,73 @@ a {
     margin-bottom: 1rem;
     border-radius: 37px; }
 
-.japan-container {
+.marker, .beijing .marker-1, .beijing .marker-2, .beijing .marker-3, .tokyo .marker-1, .tokyo .marker-2, .tokyo .marker-3, .tokyo .marker-4, .tokyo .marker-5, .miyajima .marker-1, .miyajima .marker-2, .miyajima .marker-3, .miyajima .marker-4, .miyajima .marker-5 {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out; }
+  .marker .hex-code, .beijing .marker-1 .hex-code, .beijing .marker-2 .hex-code, .beijing .marker-3 .hex-code, .tokyo .marker-1 .hex-code, .tokyo .marker-2 .hex-code, .tokyo .marker-3 .hex-code, .tokyo .marker-4 .hex-code, .tokyo .marker-5 .hex-code, .miyajima .marker-1 .hex-code, .miyajima .marker-2 .hex-code, .miyajima .marker-3 .hex-code, .miyajima .marker-4 .hex-code, .miyajima .marker-5 .hex-code {
+    visibility: hidden;
+    color: white;
+    font-size: 0.8rem;
+    font-family: "Avenir-Regular", sans-serif; }
+  .marker:hover .hex-code, .beijing .marker-1:hover .hex-code, .beijing .marker-2:hover .hex-code, .beijing .marker-3:hover .hex-code, .tokyo .marker-1:hover .hex-code, .tokyo .marker-2:hover .hex-code, .tokyo .marker-3:hover .hex-code, .tokyo .marker-4:hover .hex-code, .tokyo .marker-5:hover .hex-code, .miyajima .marker-1:hover .hex-code, .miyajima .marker-2:hover .hex-code, .miyajima .marker-3:hover .hex-code, .miyajima .marker-4:hover .hex-code, .miyajima .marker-5:hover .hex-code {
+    visibility: visible; }
+  .marker .black, .beijing .marker-1 .black, .beijing .marker-2 .black, .beijing .marker-3 .black, .tokyo .marker-1 .black, .tokyo .marker-2 .black, .tokyo .marker-3 .black, .tokyo .marker-4 .black, .tokyo .marker-5 .black, .miyajima .marker-1 .black, .miyajima .marker-2 .black, .miyajima .marker-3 .black, .miyajima .marker-4 .black, .miyajima .marker-5 .black {
+    color: black; }
+  .marker:hover, .beijing .marker-1:hover, .beijing .marker-2:hover, .beijing .marker-3:hover, .tokyo .marker-1:hover, .tokyo .marker-2:hover, .tokyo .marker-3:hover, .tokyo .marker-4:hover, .tokyo .marker-5:hover, .miyajima .marker-1:hover, .miyajima .marker-2:hover, .miyajima .marker-3:hover, .miyajima .marker-4:hover, .miyajima .marker-5:hover {
+    width: auto;
+    padding: 1rem 1.2rem 0.95rem 1.1rem; }
+
+.beijing .marker-1 {
+  background-color: #A2B2BF; }
+.beijing .marker-2 {
+  background-color: #8E340F; }
+.beijing .marker-3 {
+  background-color: #D2BF94; }
+
+.tokyo .marker-1 {
+  background-color: #e75e5a; }
+.tokyo .marker-2 {
+  background-color: #008b00; }
+.tokyo .marker-3 {
+  background-color: #44c5f1; }
+.tokyo .marker-4 {
+  background-color: #cc98c1; }
+.tokyo .marker-5 {
+  background-color: #374244; }
+
+.miyajima .marker-1 {
+  background-color: #9F1B00; }
+.miyajima .marker-2 {
+  background-color: #8fa49d; }
+.miyajima .marker-3 {
+  background-color: #edcd54; }
+.miyajima .marker-4 {
+  background-color: #515418; }
+.miyajima .marker-5 {
+  background-color: #efe7dc; }
+
+.travel-container {
   padding: 7rem 15rem 7rem 15rem;
   background-color: #F8F8F8; }
-  .japan-container ::selection {
+  .travel-container ::selection {
     background-color: #FFC3C1; }
 
-.video-container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  margin: 0rem;
-  padding: 0rem;
+.cover-img {
+  width: 100%;
+  height: 100%;
   background-color: #F8F8F8; }
-  .video-container video {
-    position: absolute;
-    top: 0px;
+  .cover-img img {
     width: 100vw;
     height: auto; }
 
-.video-overlay {
-  position: absolute;
+.img-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -83,23 +129,39 @@ a {
   padding: 2rem 4rem 2rem 4rem;
   background-color: white;
   opacity: 0.85; }
-  .video-overlay .title {
+  .img-overlay .title {
     font-family: "Avenir-Bold", sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem; }
-  .video-overlay .sub-title {
-    letter-spacing: 0.15rem; }
+  .img-overlay .sub-title {
+    letter-spacing: 0.15rem;
+    margin-bottom: 2rem; }
+  .img-overlay .down-arrow {
+    height: 0.5rem;
+    width: auto; }
 
-.main-container {
-  padding: 5rem 20rem 5rem 20rem; }
+.travel-path-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.travel-path {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 2rem; }
+  .travel-path img {
+    height: 0.5rem;
+    width: auto;
+    margin: 0rem 0.75rem; }
 
 .travel-blog-title {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
   font-family: "Avenir-Bold", sans-serif; }
   .travel-blog-title .color-pallete {
     margin-bottom: 1.5rem;
@@ -110,51 +172,6 @@ a {
   .travel-blog-title .title {
     font-family: "Avenir-Bold", sans-serif; }
 
-.marker, .itsukushima .marker-1, .itsukushima .marker-2, .itsukushima .marker-3, .itsukushima .marker-4, .itsukushima .marker-5, .tokyo .marker-1, .tokyo .marker-2, .tokyo .marker-3, .tokyo .marker-4, .tokyo .marker-5 {
-  height: 1.5rem;
-  width: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out; }
-  .marker .hex-code, .itsukushima .marker-1 .hex-code, .itsukushima .marker-2 .hex-code, .itsukushima .marker-3 .hex-code, .itsukushima .marker-4 .hex-code, .itsukushima .marker-5 .hex-code, .tokyo .marker-1 .hex-code, .tokyo .marker-2 .hex-code, .tokyo .marker-3 .hex-code, .tokyo .marker-4 .hex-code, .tokyo .marker-5 .hex-code {
-    visibility: hidden;
-    color: white;
-    font-size: 0.8rem;
-    font-family: "Avenir-Regular", sans-serif; }
-  .marker:hover .hex-code, .itsukushima .marker-1:hover .hex-code, .itsukushima .marker-2:hover .hex-code, .itsukushima .marker-3:hover .hex-code, .itsukushima .marker-4:hover .hex-code, .itsukushima .marker-5:hover .hex-code, .tokyo .marker-1:hover .hex-code, .tokyo .marker-2:hover .hex-code, .tokyo .marker-3:hover .hex-code, .tokyo .marker-4:hover .hex-code, .tokyo .marker-5:hover .hex-code {
-    visibility: visible; }
-  .marker .black, .itsukushima .marker-1 .black, .itsukushima .marker-2 .black, .itsukushima .marker-3 .black, .itsukushima .marker-4 .black, .itsukushima .marker-5 .black, .tokyo .marker-1 .black, .tokyo .marker-2 .black, .tokyo .marker-3 .black, .tokyo .marker-4 .black, .tokyo .marker-5 .black {
-    color: black; }
-  .marker:hover, .itsukushima .marker-1:hover, .itsukushima .marker-2:hover, .itsukushima .marker-3:hover, .itsukushima .marker-4:hover, .itsukushima .marker-5:hover, .tokyo .marker-1:hover, .tokyo .marker-2:hover, .tokyo .marker-3:hover, .tokyo .marker-4:hover, .tokyo .marker-5:hover {
-    width: auto;
-    padding: 1rem 1.2rem 0.95rem 1.1rem; }
-
-.itsukushima .marker-1 {
-  background-color: #9F1B00; }
-.itsukushima .marker-2 {
-  background-color: #8fa49d; }
-.itsukushima .marker-3 {
-  background-color: #edcd54; }
-.itsukushima .marker-4 {
-  background-color: #515418; }
-.itsukushima .marker-5 {
-  background-color: #efe7dc; }
-
-.tokyo .marker-1 {
-  background-color: #e75e5a; }
-.tokyo .marker-2 {
-  background-color: #44c5f1; }
-.tokyo .marker-3 {
-  background-color: #cc98c1; }
-.tokyo .marker-4 {
-  background-color: #374244; }
-.tokyo .marker-5 {
-  background-color: #008b00; }
-
 .travel-photos {
   display: flex;
   flex-wrap: wrap;
@@ -163,7 +180,7 @@ a {
   .travel-photos .travel-intro {
     width: 100%;
     font-size: 0.9rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.5rem; }
 
 .photo, .photo-one-third, .photo-two-thirds, .photo-one-half {
@@ -194,19 +211,6 @@ a {
     width: 50%;
     font-size: 0.9rem;
     line-height: 1.5rem; }
-
-.travel-vlogs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-  .travel-vlogs .title {
-    font-family: "Avenir-Bold", sans-serif;
-    width: 100%;
-    margin-bottom: 3rem; }
-  .travel-vlogs video {
-    width: 35%;
-    margin: 0rem 2rem; }
 
 .photo-one-third {
   width: 31%; }
