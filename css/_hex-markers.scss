@@ -23,6 +23,17 @@
   }
 }
 
+.osaka {
+  .marker-1 {
+    @extend .marker;
+    background-color: #DCE9F9;
+  }
+  .marker-2 {
+    @extend .marker;
+    background-color: #D7C276;
+  }
+}
+
 .kyoto {
   .marker-1 {
     @extend .marker;
