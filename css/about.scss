@@ -71,6 +71,11 @@
   }
 }
 
+.photography-container {
+  background-color: $about-background;
+  @include container-pad(10rem);
+}
+
 @media screen and (max-width: 1350px) {
   .project-container {
     justify-content: center;
@@ -90,7 +95,8 @@
 
 @media screen and (max-width: 900px) {
   .about-container,
-  .project-container {
+  .project-container,
+  .photography-container {
     padding: 5rem;
     .card {
       width: 100%;
@@ -100,7 +106,8 @@
 
 @media screen and (max-width: 600px) {
   .about-container,
-  .project-container {
+  .project-container,
+  .photography-container {
     padding: 2rem;
   }
 }
