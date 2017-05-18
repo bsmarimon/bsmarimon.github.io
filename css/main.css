@@ -369,7 +369,7 @@ a {
     align-items: center;
     flex-wrap: wrap; }
     .photography-container .photos-container .photo, .photography-container .photos-container .photo-one-third, .photography-container .photos-container .photo-two-thirds, .photography-container .photos-container .photo-one-half {
-      width: 45%; }
+      width: 48%; }
 
 @media screen and (max-width: 1350px) {
   .project-container {
