@@ -4,6 +4,12 @@
 @font-face {
   font-family: 'Avenir-Regular';
   src: url("./fonts/AvenirNextLTPro-Regular.otf") format("truetype"); }
+@font-face {
+  font-family: 'Pacifico';
+  src: url("./fonts/Pacifico.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Comic Sans';
+  src: url("./fonts/ComicSans.ttf") format("truetype"); }
 *,
 *:after,
 *:before {
@@ -287,6 +293,9 @@ a {
   border-bottom: 5px solid #80D8FF;
   padding-bottom: 1px; }
 
+::selection {
+  background-color: #FFE0B2; }
+
 .project-container {
   background-color: #80D8FF;
   padding: 7rem 15rem 7rem 15rem; }
@@ -346,13 +355,30 @@ a {
 
 .photography-container {
   background-color: white;
-  padding: 10rem 15rem 10rem 15rem; }
+  padding: 10rem 15rem 10rem 15rem;
+  font-size: 0.9rem; }
+  .photography-container .intro {
+    padding-bottom: 5rem; }
+    .photography-container .intro .photography-text {
+      font-family: "Pacifico", sans-serif; }
+    .photography-container .intro .design-text {
+      font-family: "Comic Sans", sans-serif; }
+  .photography-container .photos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .photography-container .photos-container .photo, .photography-container .photos-container .photo-one-third, .photography-container .photos-container .photo-two-thirds, .photography-container .photos-container .photo-one-half {
+      width: 45%; }
 
 @media screen and (max-width: 1350px) {
   .project-container {
     justify-content: center; }
     .project-container .card {
-      width: 90%; } }
+      width: 90%; }
+
+  .photography-container .photos-container .photo, .photography-container .photos-container .photo-one-third, .photography-container .photos-container .photo-two-thirds, .photography-container .photos-container .photo-one-half {
+    width: 100%; } }
 @media screen and (max-width: 1100px) {
   .about-container .profile-picture {
     display: none; } }
