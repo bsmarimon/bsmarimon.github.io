@@ -22,12 +22,16 @@ $font-header: 'Avenir-Bold', sans-serif;
 $font-body: 'Avenir-Regular', sans-serif;
 $font-fun: 'Pacifico', sans-serif;
 $font-more-fun: 'Comic Sans', sans-serif;
+
 $highlight: #80D8FF;
-$about-background: white;
-$project-background:  #80D8FF;
+$about-background: #FAFAFA;
+$project-background: #80D8FF;
+$misc-background: #FFA7A7;
+
+$off-white: #FAFAFA;
 
 // travel blog SCSS
-$blog-background-color: #F8F8F8;
+$travel-background-color: white;
 
 $default-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 $default-tag-padding: 0.5rem 1.5rem 0.35rem 1.5rem;

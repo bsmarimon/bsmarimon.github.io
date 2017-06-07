@@ -3,21 +3,12 @@
   padding-bottom: 1px;
 }
 
-::selection {
-  background-color: #FFE0B2;
-}
-
-.project-container {
-  background-color: $project-background;
-  @include container-pad(7rem);
-}
-
 .about-container {
+  @include container-pad(10rem);
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $about-background;
-  @include container-pad(10rem);
   .profile-picture {
     flex: 1;
     padding-right: 5rem;
@@ -37,7 +28,7 @@
 }
 
 .project-container {
-  padding: 7rem 15rem 0rem 15rem;
+  @include container-pad(7rem);
   background-color: $project-background;
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +36,7 @@
 }
 
 .card {
-  background-color: #FAFAFA;
+  background-color: $off-white;
   height: auto;
   width: 40%;
   padding: 2rem 2rem 1rem 2rem;
@@ -75,26 +66,50 @@
   }
 }
 
-.photography-container {
-  background-color: $about-background;
-  @include container-pad(10rem);
+.other-container {
+  @include container-pad(15rem);
+  height: 100vh;
+  background-color: $misc-background;
   font-size: 0.9rem;
   .intro {
+    font-family: $font-body;
     padding-bottom: 5rem;
-    .photography-text {
-      font-family: $font-fun;
-    }
-    .design-text {
-      font-family: $font-more-fun;
-    }
   }
-  .photos-container {
+  .hobbies {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    .photo {
-      width: 48%;
+    .hobby-container {
+      width: 25%;
+      background-color: $off-white;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: $default-shadow;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      font-family: $font-header;
+      align-items: center;
+      .title {
+        letter-spacing: 0.1rem;
+        flex: 0 0 auto;
+        padding-right: 5px;
+      }
+      .decoration {
+        flex: 1;
+        height: 2px;
+        margin-bottom: 3px;
+        background-color: black;
+      }
+    }
+    .items {
+      padding: 1rem 0rem;
+    }
+    .item {
+      padding: 0.5rem 0rem;
+      font-family: $font-body;
     }
   }
 }

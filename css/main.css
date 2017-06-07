@@ -13,7 +13,6 @@
 *,
 *:after,
 *:before {
-  font-family: "Avenir-Regular", sans-serif;
   box-sizing: border-box;
   position: relative;
   padding: 0;
@@ -127,15 +126,14 @@ a {
   background-color: #efe7dc; }
 
 .travel-container {
-  padding: 7rem 15rem 7rem 15rem;
-  background-color: #F8F8F8; }
+  background-color: white; }
   .travel-container ::selection {
     background-color: #FFC3C1; }
 
 .cover-img {
   width: 100vw;
   height: 100vh;
-  background-color: #F8F8F8; }
+  background-color: white; }
   .cover-img img {
     width: 100vw;
     height: 100vh; }
@@ -149,19 +147,13 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 5rem;
   background-color: white;
-  opacity: 0.85; }
+  opacity: 0.9; }
   .img-overlay .title {
     font-family: "Avenir-Bold", sans-serif;
     font-size: 2rem;
-    margin-bottom: 1rem; }
-  .img-overlay .sub-title {
-    letter-spacing: 0.15rem;
-    margin-bottom: 2rem; }
-  .img-overlay .down-arrow {
-    height: 0.5rem;
-    width: auto; }
+    letter-spacing: 0.1rem; }
 
 .travel-path-container {
   width: 100%;
@@ -268,7 +260,7 @@ a {
   .cover-img {
     width: 100%;
     height: 100%;
-    background-color: #F8F8F8; }
+    background-color: white; }
     .cover-img img {
       width: 100vw;
       height: auto; } }
@@ -293,19 +285,12 @@ a {
   border-bottom: 5px solid #80D8FF;
   padding-bottom: 1px; }
 
-::selection {
-  background-color: #FFE0B2; }
-
-.project-container {
-  background-color: #80D8FF;
-  padding: 7rem 15rem 7rem 15rem; }
-
 .about-container {
+  padding: 10rem 15rem 10rem 15rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  padding: 10rem 15rem 10rem 15rem; }
+  background-color: #FAFAFA; }
   .about-container .profile-picture {
     flex: 1;
     padding-right: 5rem;
@@ -321,7 +306,7 @@ a {
     line-height: 2.5rem; }
 
 .project-container {
-  padding: 7rem 15rem 0rem 15rem;
+  padding: 7rem 15rem 7rem 15rem;
   background-color: #80D8FF;
   display: flex;
   flex-wrap: wrap;
@@ -353,23 +338,44 @@ a {
     font-size: 0.9rem;
     margin-bottom: 2rem; }
 
-.photography-container {
-  background-color: white;
-  padding: 10rem 15rem 10rem 15rem;
+.other-container {
+  padding: 15rem 15rem 15rem 15rem;
+  height: 100vh;
+  background-color: #FFA7A7;
   font-size: 0.9rem; }
-  .photography-container .intro {
+  .other-container .intro {
+    font-family: "Avenir-Regular", sans-serif;
     padding-bottom: 5rem; }
-    .photography-container .intro .photography-text {
-      font-family: "Pacifico", sans-serif; }
-    .photography-container .intro .design-text {
-      font-family: "Comic Sans", sans-serif; }
-  .photography-container .photos-container {
+  .other-container .hobbies {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; }
-    .photography-container .photos-container .photo, .photography-container .photos-container .photo-one-third, .photography-container .photos-container .photo-two-thirds, .photography-container .photos-container .photo-one-half {
-      width: 48%; }
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .other-container .hobbies .hobby-container {
+      width: 25%;
+      background-color: #FAFAFA;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .other-container .hobbies .header {
+      display: flex;
+      flex-direction: row;
+      font-family: "Avenir-Bold", sans-serif;
+      align-items: center; }
+      .other-container .hobbies .header .title {
+        letter-spacing: 0.1rem;
+        flex: 0 0 auto;
+        padding-right: 5px; }
+      .other-container .hobbies .header .decoration {
+        flex: 1;
+        height: 2px;
+        margin-bottom: 3px;
+        background-color: black; }
+    .other-container .hobbies .items {
+      padding: 1rem 0rem; }
+    .other-container .hobbies .item {
+      padding: 0.5rem 0rem;
+      font-family: "Avenir-Regular", sans-serif; }
 
 @media screen and (max-width: 1350px) {
   .project-container {
