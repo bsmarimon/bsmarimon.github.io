@@ -7,20 +7,43 @@
     <link rel="icon" type="image/jpg" href="favicon.jpg">
   </head>
   <body>
-
     <div class="about-container">
-      <div class="profile-picture">
-        <img src="./me.png" />
-      </div>
-      <div class="info">
-        <p>Hi, I'm Ben.<br/><br/>This spring, I graduated from <span class="highlight">UC Berkeley</span> with a degree in electrical engineering and computer science. While at school, I worked to redesign and develop websites for campus organizations through <span class="highlight"><a href="http://innovativedesign.club/" target="_blank">Innovative Design</a></span>. Right now, I spend most of my free time reading and learning to play songs from Hamilton. You can see some of the projects I've worked on below.</p>
-        <br/>
-        <a target="_blank" href="BenjaminMarimonResume.pdf">resume</a>
-        <p>bsmarimon@berkeley.edu</p>
+      <div class="info-container">
+        <div class="info-item">
+            <div class="color-bar" style="background-color: #80D8FF"></div>
+            <div class="description">Benjamin Marimon</div>
+        </div>
+        <div class="info-item">
+            <div class="color-bar" style="background-color: #8BE07F"></div>
+            <div class="description">incoming software engineer @ <a target="_blank" href="https://nextdoor.com/about_us/">Nextdoor</a></div>
+        </div>
+        <div class="info-item">
+            <div class="color-bar" style="background-color: #FF8A80"></div>
+            <div class="description"><3 The Killers and stand-up comedy</div>
+        </div>
+        <div class="info-item">
+            <div class="color-bar" style="background-color: #B388FF"></div>
+            <div class="description">amateur guitarist and <a href="https://www.instagram.com/ben.tobox/" target="_blank">photographer</a></div>
+        </div>
+        <div class="info-item">
+            <div class="color-bar" style="background-color: #FF9E80"></div>
+            <div class="description">
+              <a target="_blank" href="BenjaminMarimonResume.pdf">resume</a> //
+              <span onclick=putEmail(); class="email" id="email">email</span>
+            </div>
+        </div>
       </div>
     </div>
 
-    <div class="project-container">
+    <script>
+      function putEmail() {
+        email = document.getElementById("email");
+        text = "ude.yelekreb@nomiramsb".split('').reverse().join('');
+        email.innerHTML = text;
+      }
+    </script>
+
+    <!-- <div class="project-container">
 
       <div class="card">
         <div class="header">
@@ -93,54 +116,6 @@
         </div>
       </div>
 
-    </div>
-
-    <!-- <div class="other-container">
-      <div class="hobbies">
-        <div class="hobby-container">
-          <div class="header">
-            <div class="title">
-              WRITING
-            </div>
-            <div class="decoration">
-            </div>
-          </div>
-          <div class="items">
-            <p class="item">Brunelleschi's Dome</p>
-          </div>
-        </div>
-        <div class="hobby-container">
-          <div class="header">
-            <div class="title">
-              PHOTOGRAPHY
-            </div>
-            <div class="decoration">
-            </div>
-          </div>
-          <div class="items">
-            <p class="item">Berkeley</p>
-            <p class="item"><a href="./japan.html">Japan</a></p>
-            <p class="item">Iceland</p>
-            <p class="item">Germany</p>
-            <p class="item">Switzerland</p>
-            <p class="item">Italy</p>
-            <p class="item">People</p>
-          </div>
-        </div>
-        <div class="hobby-container">
-          <div class="header">
-            <div class="title">
-              MUSIC
-            </div>
-            <div class="decoration">
-            </div>
-          </div>
-          <div class="items">
-            <p class="item">Wait for It (Hamilton)</p>
-          </div>
-        </div>
-      </div>
     </div> -->
-
   </body>
 </html>

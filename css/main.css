@@ -285,32 +285,48 @@ a {
   border-bottom: 5px solid #80D8FF;
   padding-bottom: 1px; }
 
+html {
+  font-family: "Avenir-Regular", sans-serif; }
+
+::selection {
+  background-color: #80D8FF; }
+
 .about-container {
   padding: 10rem 15rem 10rem 15rem;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #FAFAFA; }
-  .about-container .profile-picture {
-    flex: 1;
-    padding-right: 5rem;
-    text-align: center; }
-    .about-container .profile-picture img {
-      border-radius: 50%;
-      height: auto;
-      width: 90%; }
-  .about-container .info {
-    flex: 2;
-    font-family: "Avenir-Regular", sans-serif;
-    font-size: 0.9rem;
-    line-height: 2.5rem; }
+  .about-container .info-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; }
+
+.info-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .info-item .color-bar {
+    height: 1.2rem;
+    width: 0.25rem;
+    margin-right: 0.5rem; }
+  .info-item .description {
+    padding-top: 0.2rem;
+    font-size: 0.9rem; }
+  .info-item .email {
+    cursor: pointer; }
 
 .project-container {
-  padding: 7rem 15rem 7rem 15rem;
+  padding: 0rem 15rem;
+  min-height: 100vh;
   background-color: #80D8FF;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .card {
   background-color: #FAFAFA;
@@ -319,88 +335,43 @@ a {
   padding: 2rem 2rem 1rem 2rem;
   border-radius: 5px;
   line-height: 1.5rem;
-  margin-bottom: 5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .card .header {
     display: flex;
     font-family: "Avenir-Bold", sans-serif;
+    font-size: 0.9rem;
     margin-bottom: 2rem; }
     .card .header .title {
-      flex: 3;
-      font-size: 1rem; }
+      flex: 3; }
     .card .header .link {
       flex: 1;
       text-align: right;
       color: #80D8FF;
       text-align: right; }
   .card .description {
-    font-family: "Avenir-Regular", sans-serif;
     font-size: 0.9rem;
     margin-bottom: 2rem; }
 
-.other-container {
-  padding: 15rem 15rem 15rem 15rem;
-  height: 100vh;
-  background-color: #FFA7A7;
-  font-size: 0.9rem; }
-  .other-container .intro {
-    font-family: "Avenir-Regular", sans-serif;
-    padding-bottom: 5rem; }
-  .other-container .hobbies {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between; }
-    .other-container .hobbies .hobby-container {
-      width: 25%;
-      background-color: #FAFAFA;
-      padding: 2rem;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-    .other-container .hobbies .header {
-      display: flex;
-      flex-direction: row;
-      font-family: "Avenir-Bold", sans-serif;
-      align-items: center; }
-      .other-container .hobbies .header .title {
-        letter-spacing: 0.1rem;
-        flex: 0 0 auto;
-        padding-right: 5px; }
-      .other-container .hobbies .header .decoration {
-        flex: 1;
-        height: 2px;
-        margin-bottom: 3px;
-        background-color: black; }
-    .other-container .hobbies .items {
-      padding: 1rem 0rem; }
-    .other-container .hobbies .item {
-      padding: 0.5rem 0rem;
-      font-family: "Avenir-Regular", sans-serif; }
-
 @media screen and (max-width: 1350px) {
   .project-container {
+    padding: 5rem;
     justify-content: center; }
     .project-container .card {
-      width: 90%; }
-
-  .photography-container .photos-container .photo, .photography-container .photos-container .photo-one-third, .photography-container .photos-container .photo-two-thirds, .photography-container .photos-container .photo-one-half {
-    width: 100%; } }
+      width: 90%;
+      margin-bottom: 5rem; } }
 @media screen and (max-width: 1100px) {
   .about-container .profile-picture {
     display: none; } }
 @media screen and (max-width: 900px) {
   .about-container,
-  .project-container,
-  .photography-container {
+  .project-container {
     padding: 5rem; }
     .about-container .card,
-    .project-container .card,
-    .photography-container .card {
+    .project-container .card {
       width: 100%; } }
 @media screen and (max-width: 600px) {
   .about-container,
-  .project-container,
-  .photography-container {
+  .project-container {
     padding: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */

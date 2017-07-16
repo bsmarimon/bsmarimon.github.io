@@ -3,36 +3,57 @@
   padding-bottom: 1px;
 }
 
+html {
+  font-family: $font-body;
+}
+
+::selection {
+  background-color: #80D8FF;
+}
+
 .about-container {
-  @include container-pad(10rem);
+  padding: 10rem 15rem 10rem 15rem;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $about-background;
-  .profile-picture {
-    flex: 1;
-    padding-right: 5rem;
-    text-align: center;
-    img {
-        border-radius: 50%;
-        height: auto;
-        width: 90%;
-    }
-  }
-  .info {
-    flex: 2;
-    font-family: $font-body;
-    font-size: 0.9rem;
-    line-height: 2.5rem;
+  .info-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 
+.info-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  .color-bar {
+    height: 1.2rem;
+    width: 0.25rem;
+    margin-right: 0.5rem;
+  }
+  .description {
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+  }
+  .email {
+    cursor: pointer;
+  }
+}
+
+
 .project-container {
-  @include container-pad(7rem);
+  padding: 0rem 15rem;
+  min-height: 100vh;
   background-color: $project-background;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card {
@@ -42,15 +63,14 @@
   padding: 2rem 2rem 1rem 2rem;
   border-radius: 5px;
   line-height: 1.5rem;
-  margin-bottom: 5rem;
   box-shadow: $default-shadow;
   .header {
     display: flex;
     font-family: $font-header;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
     .title {
       flex: 3;
-      font-size: 1rem;
     }
     .link {
       flex: 1;
@@ -60,69 +80,19 @@
     }
   }
   .description {
-    font-family: $font-body;
     font-size: 0.9rem;
     margin-bottom: 2rem;
   }
 }
 
-.other-container {
-  @include container-pad(15rem);
-  height: 100vh;
-  background-color: $misc-background;
-  font-size: 0.9rem;
-  .intro {
-    font-family: $font-body;
-    padding-bottom: 5rem;
-  }
-  .hobbies {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    .hobby-container {
-      width: 25%;
-      background-color: $off-white;
-      padding: 2rem;
-      border-radius: 5px;
-      box-shadow: $default-shadow;
-    }
-    .header {
-      display: flex;
-      flex-direction: row;
-      font-family: $font-header;
-      align-items: center;
-      .title {
-        letter-spacing: 0.1rem;
-        flex: 0 0 auto;
-        padding-right: 5px;
-      }
-      .decoration {
-        flex: 1;
-        height: 2px;
-        margin-bottom: 3px;
-        background-color: black;
-      }
-    }
-    .items {
-      padding: 1rem 0rem;
-    }
-    .item {
-      padding: 0.5rem 0rem;
-      font-family: $font-body;
-    }
-  }
-}
-
 @media screen and (max-width: 1350px) {
   .project-container {
+    padding: 5rem;
     justify-content: center;
     .card {
       width: 90%;
+      margin-bottom: 5rem;
     }
-  }
-  .photography-container .photos-container .photo {
-    width: 100%;
   }
 }
 
@@ -136,8 +106,7 @@
 
 @media screen and (max-width: 900px) {
   .about-container,
-  .project-container,
-  .photography-container {
+  .project-container {
     padding: 5rem;
     .card {
       width: 100%;
@@ -147,8 +116,7 @@
 
 @media screen and (max-width: 600px) {
   .about-container,
-  .project-container,
-  .photography-container {
+  .project-container {
     padding: 2rem;
   }
 }
