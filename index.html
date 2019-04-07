@@ -7,7 +7,7 @@
     <link rel="icon" type="image/jpg" href="favicon.jpg">
   </head>
   <body>
-    <div class="about-container">
+    <div class="container">
       <div class="info-container">
         <div class="info-item">
             <div class="color-bar" style="background-color: #80D8FF"></div>
@@ -23,12 +23,17 @@
         </div>
         <div class="info-item">
             <div class="color-bar" style="background-color: #B388FF"></div>
-            <div class="description">amateur guitarist and <a href="https://www.instagram.com/ben.tobox/" target="_blank">photographer</a></div>
+            <div class="description">acoustic guitar</div>
         </div>
         <div class="info-item">
             <div class="color-bar" style="background-color: #FF9E80"></div>
             <div class="description">
-              <a target="_blank" href="BenjaminMarimonResume.pdf">resume</a> //
+              <a target="_blank" href="BenjaminMarimonResume.pdf">resume [outdated]</a>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="color-bar" style="background-color: #FF80C1"></div>
+            <div class="description">
               <span onclick=putEmail(); class="email" id="email">email</span>
             </div>
         </div>
@@ -40,82 +45,8 @@
         email = document.getElementById("email");
         text = "ude.yelekreb@nomiramsb".split('').reverse().join('');
         email.innerHTML = text;
+        email.style.cursor = 'default';
       }
     </script>
-
-    <!-- <div class="project-container">
-
-      <div class="card">
-        <div class="header">
-          <div class="title">
-            <span>Bear+</span>
-          </div>
-          <div class="link">
-            <a class="link" href="https://chrome.google.com/webstore/detail/build-a-bear/nlnifjnbcgcinenigfhfeehcpebifnld" target="_blank">live</a>
-          </div>
-        </div>
-        <p class="description">Worked as the frontend developer on a team to build a replacement for the scheduling platform used by UC Berkeley. Built features using React and Redux. Wrote scripts to scrap up to date course information to use for the website. Created an algorithm to display courses in a calendar for students.
-        </p>
-        <div class="tag-container">
-          <div class="tag react">React</div>
-          <div class="tag redux">Redux</div>
-          <div class="tag python">Python</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="header">
-          <div class="title">
-            <span>Petra Finance</span>
-          </div>
-          <div class="link">
-            <a class="link" href="http://www.trypetra.com/" target="_blank">beta</a>
-          </div>
-        </div>
-        <p class="description">Built out the front end for a personal finance application for iOS devices and handled beta testing. Implemented algorithms to analyze financial data provided by Plaid API. Accepted into the Fall 2016 program for Free Ventures, a student-run incubator at Berkeley.
-        </p>
-        <div class="tag-container">
-          <div class="tag react-native">React Native</div>
-          <div class="tag redux">Redux</div>
-          <div class="tag api">Plaid API</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="header">
-          <div class="title">
-            <span>FAST</span>
-          </div>
-          <div class="link">
-            <a class="link" href="https://innod-webtier.github.io/fast" target="_blank">live</a>
-          </div>
-        </div>
-        <p class="description">Built a new website for a fashion organization at UC Berkeley with a blog for their writing staff. I have also built websites for other student organizations such as Premed@Berkeley, the Indian Students Association, Progressive Student Association, Entomology Club at Berkeley, Berkeley Student Journal of Asian Studies and Innovative Design.
-        </p>
-        <div class="tag-container">
-          <div class="tag react">React</div>
-          <div class="tag meteor">Meteor</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="header">
-          <div class="title">
-            <span>Petra Calendar</span>
-          </div>
-          <div class="link">
-            <a class="link" href="http://www.trypetra.com/" target="_blank">wip</a>
-          </div>
-        </div>
-        <p class="description">Built the frontend for a productivity application that allows users to interact with different event calendars (Google, Facebook) and task managers in a single web application. Added drag and drop, drag to resize, and direct editing for manipulating calendar events. Currently supports Google calendar and beta testing with a small group of peers.
-        </p>
-        <div class="tag-container">
-          <div class="tag react">React</div>
-          <div class="tag redux">Redux</span></div>
-          <div class="tag api">Google Calendar API</div>
-        </div>
-      </div>
-
-    </div> -->
   </body>
 </html>
