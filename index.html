@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <div class="info-container">
-        <div class="info-item">
+        <div id="name" class="info-item">
             <div class="color-bar" style="background-color: #80D8FF"></div>
             <div class="description">Benjamin Marimon</div>
         </div>
@@ -46,6 +46,16 @@
         text = "ude.yelekreb@nomiramsb".split('').reverse().join('');
         email.innerHTML = text;
         email.style.cursor = 'default';
+      }
+
+      window.onload = function() {
+        var audio = document.createElement("AUDIO")
+        document.body.appendChild(audio);
+        audio.src = "./benjaminmarimon.mp3"
+        var name = document.getElementById("name")
+        name.addEventListener("click", function () {
+          audio.play()
+        });
       }
     </script>
   </body>
